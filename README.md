@@ -1,14 +1,8 @@
 
-# DispatcheurCC - Sistema Integrado de Gestão de Operações de Reboque
+# DispatcheurCC - Sistema Integrado de Gestão de Operações de Empresas de Reboques
 
 <div align="center">
   <img src="dispatcheur.png" alt="DispatcheurCC Logo" width="200"/>
-  
-  [
-  [
-  [
-  [
-  [
 </div>
 
 ## 🚗 Sobre o Projeto
