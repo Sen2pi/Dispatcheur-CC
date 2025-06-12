@@ -7,7 +7,7 @@
 
 ## 🚗 Sobre o Projeto
 
-O DispatcheurCC é uma aplicação web inovadora desenvolvida para otimizar a gestão de operações de reboque e assistência rodoviária, integrando call centers e empresas de reboques numa plataforma unificada[^1]. A solução revoluciona o setor através de tecnologias modernas, proporcionando comunicação em tempo real, gestão eficiente de missões e análise estratégica de dados operacionais[^1].
+O DispatcheurCC é uma aplicação web inovadora desenvolvida para otimizar a gestão de operações de reboque e assistência rodoviária, integrando call centers e empresas de reboques numa plataforma unificada. A solução revoluciona o setor através de tecnologias modernas, proporcionando comunicação em tempo real, gestão eficiente de missões e análise estratégica de dados operacionais.
 
 ### 🎯 Objetivos Principais
 
@@ -46,39 +46,39 @@ graph TB
 
 ### Componentes Principais
 
-1. **API REST (DispatcheurCC-api)**: Gerencia a lógica de negócios[^1]
-2. **Frontend React**: Interface amigável para utilizadores[^1]
-3. **Extensão Chrome**: Automatiza tarefas específicas no navegador[^1]
+1. **API REST (DispatcheurCC-api)**: Gerencia a lógica de negócios
+2. **Frontend React**: Interface amigável para utilizadores
+3. **Extensão Chrome**: Automatiza tarefas específicas no navegador
 
 ## 💻 Stack Tecnológico
 
 ### Backend
 
-- **Node.js 19+** com **Express.js**: Framework robusto para APIs RESTful[^1]
-- **JWT (JSON Web Tokens)**: Autenticação segura stateless[^1]
-- **Socket.IO**: Comunicação bidirecional em tempo real[^1]
-- **OpenAPI 3.0/Swagger**: Documentação automática da API[^1]
+- **Node.js 19+** com **Express.js**: Framework robusto para APIs RESTful
+- **JWT (JSON Web Tokens)**: Autenticação segura stateless
+- **Socket.IO**: Comunicação bidirecional em tempo real
+- **OpenAPI 3.0/Swagger**: Documentação automática da API
 
 
 ### Frontend
 
-- **React 19+**: Biblioteca base para construção da interface[^1]
-- **Material UI v6**: Design system baseado no Material Design[^1]
-- **TailwindCSS**: Framework CSS utility-first[^1]
-- **Axios**: Cliente HTTP para integração com API[^1]
+- **React 19+**: Biblioteca base para construção da interface
+- **Material UI v6**: Design system baseado no Material Design
+- **TailwindCSS**: Framework CSS utility-first
+- **Axios**: Cliente HTTP para integração com API
 
 
 ### Base de Dados
 
-- **MySQL 8.0**: Sistema de gestão de base de dados relacional[^1]
-- **Redis 7.0**: Sistema de cache em memória para otimização[^1]
+- **MySQL 8.0**: Sistema de gestão de base de dados relacional
+- **Redis 7.0**: Sistema de cache em memória para otimização
 
 
 ### Integrações
 
-- **API NUACOM**: Gateway VoIP para comunicações[^1]
-- **SIP.js**: Protocolo de comunicação VoIP[^1]
-- **WebRTC**: Tecnologia para comunicação em tempo real[^1]
+- **API NUACOM**: Gateway VoIP para comunicações
+- **SIP.js**: Protocolo de comunicação VoIP
+- **WebRTC**: Tecnologia para comunicação em tempo real
 
 
 ## 🗄️ Estrutura da Base de Dados
@@ -129,7 +129,7 @@ erDiagram
 
 ### Análise da 3ª Forma Normal (3NF)
 
-O estudo detalhado da conformidade com a 3ª Forma Normal revelou que **66.7% das tabelas** estão em conformidade completa[^1]:
+O estudo detalhado da conformidade com a 3ª Forma Normal revelou que **66.7% das tabelas** estão em conformidade completa:
 
 #### Conformidade por Tabela
 
@@ -144,7 +144,7 @@ O estudo detalhado da conformidade com a 3ª Forma Normal revelou que **66.7% da
 
 #### Violação Crítica Identificada
 
-A tabela **Resposta** apresenta uma dependência transitiva clara[^1]:
+A tabela **Resposta** apresenta uma dependência transitiva clara:
 
 ```sql
 -- Problema: Dependência transitiva
@@ -171,7 +171,7 @@ pie title Conformidade 3NF - Estado Atual
     "Não Conformes" : 33
 ```
 
-**Pós-correção**: Melhoria de **80%** nas violações, elevando a conformidade para **93.3%**[^1].
+**Pós-correção**: Melhoria de **80%** nas violações, elevando a conformidade para **93.3%**.
 
 ## 🔧 Extensão Chrome
 
@@ -219,7 +219,7 @@ graph LR
 
 ### Arquitetura de Componentes
 
-O frontend implementa o padrão **Atomic Design**[^1]:
+O frontend implementa o padrão **Atomic Design**:
 
 ```mermaid
 graph TD
