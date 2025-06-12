@@ -392,8 +392,8 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ## 👨‍💻 Autor
 
 **Karim Hussen Patatas Hassam dos Santos**
-📧 Email: [karim@dispatcheur-cc.fr](mailto:karim@dispatcheur-cc.fr)
-🔗 LinkedIn: [Karim Santos](https://linkedin.com/in/kareem-santos)
+📧 Email: [karim@dispatcheur-cc.fr](mailto:dr.karim.patatas@gmail.com)
+🔗 LinkedIn: [Karim Santos](https://www.linkedin.com/in/k-patatas)
 
 ---
 
