@@ -397,11 +397,4 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-<div align="center">
-  <p>Desenvolvido com ❤️ para revolucionar o setor de assistência rodoviária</p>
-  <p>🚗 <strong>DispatcheurCC</strong> - Conectando eficiência e inovação</p>
-</div>
-<div style="text-align: center">⁂</div>
-
-[^1]: Relatorio_FinalV3.5.pdf
 
