@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DispatcheurCC - Apresentação de Projeto Final</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="presentation-container">
+      <!-- Controles de navegação -->
+      <div class="navigation">
+        <button class="nav-btn" id="prevBtn" aria-label="Slide anterior">
+          <span class="material-icons">arrow_back</span>
+        </button>
+        <span class="slide-counter" id="slideCounter">1 / 22</span>
+        <button class="nav-btn" id="nextBtn" aria-label="Próximo slide">
+          <span class="material-icons">arrow_forward</span>
+        </button>
+      </div>
+
+      <!-- Barra de progresso -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <!-- Slides -->
+      <div class="slides-container" id="slidesContainer">
+        <!-- Slide 1 - Título -->
+        <div class="slide active" data-slide="1">
+          <div class="slide-content title-slide">
+            <img src="dispatcheur.png" alt="Logo DispatcheurCC" class="logo" />
+            <h1>DispatcheurCC</h1>
+            <h2>Sistema de Gestão de Operações de Reboque</h2>
+            <div class="subtitle-info">
+              <p class="project-type">
+                Projeto Final de Licenciatura em Informática
+              </p>
+              <p class="student-name">
+                Karim Hussen Patatas Hassam dos Santos - A042542
+              </p>
+              <p class="advisor">Orientador: Marco Aurélio Amaro Oliveira</p>
+              <p class="year">2024/2025</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Agenda -->
+        <div class="slide" data-slide="2">
+          <div class="slide-content">
+            <h2>Agenda da Apresentação</h2>
+            <div class="agenda-list">
+              <div class="agenda-item">
+                <span class="agenda-title">Contextualização</span>
+                <span class="agenda-time">3 min</span>
+              </div>
+              <div class="agenda-item">
+                <span class="agenda-title">Arquitetura e Tecnologias</span>
+                <span class="agenda-time">8 min</span>
+              </div>
+              <div class="agenda-item">
+                <span class="agenda-title">Sistema VoIP (Destaque)</span>
+                <span class="agenda-time">5 min</span>
+              </div>
+              <div class="agenda-item">
+                <span class="agenda-title">Testes e Resultados</span>
+                <span class="agenda-time">7 min</span>
+              </div>
+              <div class="agenda-item">
+                <span class="agenda-title">Demonstração</span>
+                <span class="agenda-time">5 min</span>
+              </div>
+              <div class="agenda-item">
+                <span class="agenda-title">Conclusões e Discussão</span>
+                <span class="agenda-time">2 min</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Contextualização -->
+        <div class="slide" data-slide="3">
+          <div class="slide-content">
+            <h2>Contextualização do Problema</h2>
+            <div class="context-grid">
+              <div class="context-item">
+                <div class="context-icon">
+                  <span class="material-icons">flag</span>
+                </div>
+                <h3>Setor de Reboques Francês</h3>
+                <p>
+                  Mercado fragmentado com múltiplas empresas operando de forma
+                  isolada
+                </p>
+              </div>
+              <div class="context-item">
+                <div class="context-icon">
+                  <span class="material-icons">euro_symbol</span>
+                </div>
+                <h3>Perdas Económicas</h3>
+                <p>
+                  <strong>€2.3 mil milhões</strong> perdidos anualmente na União
+                  Europeia
+                </p>
+              </div>
+              <div class="context-item">
+                <div class="context-icon">
+                  <span class="material-icons">warning</span>
+                </div>
+                <h3>Ineficiências Operacionais</h3>
+                <p>Sistemas desatualizados e processos manuais ineficazes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 - Motivação -->
+        <div class="slide" data-slide="4">
+          <div class="slide-content">
+            <h2>Motivação do Projeto</h2>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">32%</div>
+                <div class="stat-label">
+                  das chamadas requerem reconfirmação
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">67%</div>
+                <div class="stat-label">
+                  dos clientes relatam falta de transparência
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">45%</div>
+                <div class="stat-label">
+                  das empresas usam sistemas incompatíveis
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 - Objetivos -->
+        <div class="slide" data-slide="5">
+          <div class="slide-content">
+            <h2>Objetivos do Projeto</h2>
+            <div class="objectives-list">
+              <div class="objective-item">
+                <div class="objective-icon">
+                  <span class="material-icons">sync</span>
+                </div>
+                <div class="objective-content">
+                  <h3>Unificação Operacional</h3>
+                  <p>
+                    Centralizar e padronizar processos de despacho em toda a
+                    rede
+                  </p>
+                </div>
+              </div>
+              <div class="objective-item">
+                <div class="objective-icon">
+                  <span class="material-icons">bolt</span>
+                </div>
+                <div class="objective-content">
+                  <h3>Otimização de Processos</h3>
+                  <p>
+                    Automatizar tarefas repetitivas e reduzir tempos de resposta
+                  </p>
+                </div>
+              </div>
+              <div class="objective-item">
+                <div class="objective-icon">
+                  <span class="material-icons">insights</span>
+                </div>
+                <div class="objective-content">
+                  <h3>Transparência e Conformidade</h3>
+                  <p>
+                    Garantir rastreabilidade completa e conformidade
+                    regulamentar
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 - Arquitetura -->
+        <div class="slide" data-slide="6">
+          <div class="slide-content">
+            <h2>Arquitetura Geral do Sistema</h2>
+            <div class="architecture-diagram">
+              <div class="arch-layer">
+                <h3>Frontend (React)</h3>
+                <div class="arch-components">
+                  <span class="component">Painel de Controlo</span>
+                  <span class="component">Interface VoIP</span>
+                  <span class="component">Gestão de Operações</span>
+                </div>
+              </div>
+              <div class="arch-arrows">
+                <span class="material-icons">sync_alt</span> WebSockets / REST
+                API
+              </div>
+              <div class="arch-layer">
+                <h3>Backend (Node.js)</h3>
+                <div class="arch-components">
+                  <span class="component">API REST</span>
+                  <span class="component">WebSocket Server</span>
+                  <span class="component">Processamento VoIP</span>
+                </div>
+              </div>
+              <div class="arch-arrows">
+                <span class="material-icons">sync_alt</span> SQL Queries
+              </div>
+              <div class="arch-layer">
+                <h3>Base de Dados (MySQL)</h3>
+                <div class="arch-components">
+                  <span class="component">Operações</span>
+                  <span class="component">Utilizadores</span>
+                  <span class="component">Logs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7 - Stack Tecnológico -->
+        <div class="slide" data-slide="7">
+          <div class="slide-content">
+            <h2>Stack Tecnológico</h2>
+            <div class="tech-stack">
+              <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-items">
+                  <span class="tech-item">Node.js</span>
+                  <span class="tech-item">Express</span>
+                  <span class="tech-item">MySQL</span>
+                  <span class="tech-item">Redis</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h3>Frontend</h3>
+                <div class="tech-items">
+                  <span class="tech-item">React</span>
+                  <span class="tech-item">Material UI</span>
+                  <span class="tech-item">TailwindCSS</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h3>Comunicação</h3>
+                <div class="tech-items">
+                  <span class="tech-item">Socket.IO</span>
+                  <span class="tech-item">WebSockets</span>
+                  <span class="tech-item">REST API</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h3>VoIP</h3>
+                <div class="tech-items">
+                  <span class="tech-item">SIP.js</span>
+                  <span class="tech-item">WebRTC</span>
+                  <span class="tech-item">NUACOM Gateway</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 8 - Justificação Técnica -->
+        <div class="slide" data-slide="8">
+          <div class="slide-content">
+            <h2>Justificação das Escolhas Técnicas</h2>
+            <div class="justification-list">
+              <div class="justification-item">
+                <strong>Node.js</strong>
+                <p>
+                  Ideal para operações I/O intensivas e comunicação em tempo
+                  real
+                </p>
+              </div>
+              <div class="justification-item">
+                <strong>React</strong>
+                <p>
+                  Interface de utilizador moderna, reativa e de fácil manutenção
+                </p>
+              </div>
+              <div class="justification-item">
+                <strong>Socket.IO</strong>
+                <p>
+                  Comunicação bidirecional robusta com fallbacks automáticos
+                </p>
+              </div>
+              <div class="justification-item">
+                <strong>MySQL</strong>
+                <p>Base de dados relacional madura com excelente performance</p>
+              </div>
+              <div class="justification-item">
+                <strong>Redis</strong>
+                <p>
+                  Cache em memória para sessões e dados frequentemente acedidos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 9 - Backend API -->
+        <div class="slide" data-slide="9">
+          <div class="slide-content">
+            <h2>Backend API</h2>
+            <div class="api-features">
+              <div class="api-feature">
+                <h3>Arquitetura RESTful</h3>
+                <p>Design consistente seguindo princípios REST</p>
+              </div>
+              <div class="api-feature">
+                <h3>Autenticação JWT</h3>
+                <p>Segurança robusta com tokens stateless</p>
+              </div>
+              <div class="api-feature">
+                <h3>+50 Endpoints</h3>
+                <p>Cobertura completa de funcionalidades</p>
+              </div>
+              <div class="api-feature">
+                <h3>Integrações Externas</h3>
+                <p>Conexão com serviços terceiros e APIs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 10 - Frontend React -->
+        <div class="slide" data-slide="10">
+          <div class="slide-content">
+            <h2>Frontend React</h2>
+            <div class="dashboard-showcase">
+              <div class="dashboard-item">
+                <h3>Painel de Controlo Administrativo</h3>
+                <img
+                  src="dashboard3.png"
+                  alt="Dashboard administrativo"
+                  class="dashboard-img"
+                />
+              </div>
+              <div class="dashboard-item">
+                <h3>Painel de Controlo do Agente</h3>
+                <img
+                  src="dashboard1.png"
+                  alt="Dashboard de agente"
+                  class="dashboard-img"
+                />
+              </div>
+              <div class="dashboard-item">
+                <h3>Painel de Controlo do Cliente</h3>
+                <img
+                  src="dashboard2.png"
+                  alt="Dashboard de cliente"
+                  class="dashboard-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 11 - Extensão Chrome -->
+        <div class="slide" data-slide="11">
+          <div class="slide-content">
+            <h2>Extensão Chrome</h2>
+            <div class="extension-showcase">
+              <div class="extension-preview">
+                <img
+                  src="extensao1.png"
+                  alt="Extensão Chrome"
+                  class="extension-img"
+                />
+              </div>
+              <div class="extension-features">
+                <div class="ext-feature">
+                  <div class="ext-icon">
+                    <span class="material-icons">search</span>
+                  </div>
+                  <h3>Monitorização Automática</h3>
+                  <p>Deteção de alterações em páginas web em tempo real</p>
+                </div>
+                <div class="ext-feature">
+                  <div class="ext-icon">
+                    <span class="material-icons">flash_on</span>
+                  </div>
+                  <h3>Manifest V3</h3>
+                  <p>Compatibilidade com a mais recente API do Chrome</p>
+                </div>
+                <div class="ext-feature">
+                  <div class="ext-icon">
+                    <span class="material-icons">link</span>
+                  </div>
+                  <h3>WebSockets</h3>
+                  <p>Comunicação direta com o servidor principal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 12 - Sistema VoIP Destaque -->
+        <div class="slide" data-slide="12">
+          <div class="slide-content highlight-slide">
+            <h2>Sistema VoIP - INOVAÇÃO</h2>
+            <div class="voip-highlight">
+              <div class="voip-main-feature">
+                <div class="voip-number">10</div>
+                <div class="voip-description">
+                  <h3>Chamadas Simultâneas</h3>
+                  <p>Capacidade única no mercado de reboques</p>
+                </div>
+              </div>
+              <div class="voip-features">
+                <div class="voip-item">
+                  <strong>Integração NUACOM Gateway</strong>
+                  <p>Conexão direta com operadores franceses</p>
+                </div>
+                <div class="voip-item">
+                  <strong>Interface Múltiplas Chamadas</strong>
+                  <p>Gestão visual e intuitiva de conversas</p>
+                </div>
+                <div class="voip-item">
+                  <strong>WebRTC + SIP.js</strong>
+                  <p>Tecnologia de ponta para comunicação web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 13 - Funcionalidades VoIP -->
+        <div class="slide" data-slide="13">
+          <div class="slide-content">
+            <h2>Funcionalidades VoIP Avançadas</h2>
+            <div class="voip-showcase">
+              <div class="voip-images">
+                <div class="voip-image-item">
+                  <img
+                    src="voip4.png"
+                    alt="Interface VoIP - componente"
+                    class="voip-img"
+                  />
+                  <p>Componente de Interface</p>
+                </div>
+                <div class="voip-image-item">
+                  <img
+                    src="voip5.png"
+                    alt="Interface VoIP - chamadas"
+                    class="voip-img"
+                  />
+                  <p>Gestão de Chamadas</p>
+                </div>
+                <div class="voip-image-item">
+                  <img
+                    src="voip7.png"
+                    alt="Interface VoIP - contactos"
+                    class="voip-img"
+                  />
+                  <p>Diretório de Contactos</p>
+                </div>
+              </div>
+              <div class="voip-functions">
+                <div class="voip-function">
+                  <div class="function-icon">
+                    <span class="material-icons">pause</span>
+                  </div>
+                  <h3>Hold/Resume</h3>
+                  <p>Colocar e retomar chamadas com um clique</p>
+                </div>
+                <div class="voip-function">
+                  <div class="function-icon">
+                    <span class="material-icons">call</span>
+                  </div>
+                  <h3>Transferência</h3>
+                  <p>Encaminhar chamadas entre operadores</p>
+                </div>
+                <div class="voip-function">
+                  <div class="function-icon">
+                    <span class="material-icons">loop</span>
+                  </div>
+                  <h3>Incoming/Outgoing</h3>
+                  <p>Gestão completa de chamadas recebidas e efetuadas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 14 - User Stories -->
+        <div class="slide" data-slide="14">
+          <div class="slide-content">
+            <h2>User Stories e Validação</h2>
+            <div class="user-stories-stats">
+              <div class="us-stat">
+                <div class="us-number">19</div>
+                <div class="us-label">User Stories Desenvolvidas</div>
+              </div>
+              <div class="us-stat">
+                <div class="us-number">6</div>
+                <div class="us-label">Utilizadores Reais Testaram</div>
+              </div>
+              <div class="us-stat">
+                <div class="us-number">15/16</div>
+                <div class="us-label">Validadas com Sucesso</div>
+              </div>
+            </div>
+            <div class="methodology">
+              <p>
+                <strong>Metodologia SMART:</strong> Critérios específicos,
+                mensuráveis, atingíveis, relevantes e temporais
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 15 - Testes Performance -->
+        <div class="slide" data-slide="15">
+          <div class="slide-content">
+            <h2>Testes de Performance</h2>
+            <div class="performance-grid">
+              <div class="perf-metric">
+                <div class="perf-value">3.069</div>
+                <div class="perf-unit">ops/segundo</div>
+                <div class="perf-desc">Operações máximas processadas</div>
+              </div>
+              <div class="perf-metric">
+                <div class="perf-value">&lt;200ms</div>
+                <div class="perf-unit">P95</div>
+                <div class="perf-desc">Tempo de resposta percentil 95</div>
+              </div>
+              <div class="perf-metric">
+                <div class="perf-value">48h</div>
+                <div class="perf-unit">contínuas</div>
+                <div class="perf-desc">Duração dos testes de resistência</div>
+              </div>
+              <div class="perf-metric">
+                <div class="perf-value">99.4%</div>
+                <div class="perf-unit">sucesso</div>
+                <div class="perf-desc">Taxa de operações bem-sucedidas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 16 - Resultados Operacionais -->
+        <div class="slide" data-slide="16">
+          <div class="slide-content">
+            <h2>Resultados Operacionais</h2>
+            <div class="results-grid">
+              <div class="result-card positive">
+                <div class="result-icon">
+                  <span class="material-icons">bolt</span>
+                </div>
+                <div class="result-value">-35%</div>
+                <div class="result-desc">Redução no tempo de resposta</div>
+              </div>
+              <div class="result-card positive">
+                <div class="result-icon">
+                  <span class="material-icons">gps_fixed</span>
+                </div>
+                <div class="result-value">+65%</div>
+                <div class="result-desc">Aumento na precisão do despacho</div>
+              </div>
+              <div class="result-card positive">
+                <div class="result-icon">
+                  <span class="material-icons">people</span>
+                </div>
+                <div class="result-value">92%</div>
+                <div class="result-desc">Aprovação na usabilidade</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 17 - Dificuldades -->
+        <div class="slide" data-slide="17">
+          <div class="slide-content">
+            <h2>Principais Dificuldades Encontradas</h2>
+            <div class="challenges-list">
+              <div class="challenge-item">
+                <div class="challenge-icon">
+                  <span class="material-icons">email</span>
+                </div>
+                <h3>Duplicação de Correio Eletrónico</h3>
+                <p>
+                  23% dos casos apresentavam emails duplicados, exigindo
+                  algoritmo de deduplicação
+                </p>
+              </div>
+              <div class="challenge-item">
+                <div class="challenge-icon">
+                  <span class="material-icons">smartphone</span>
+                </div>
+                <h3>WebSockets em Dispositivos Móveis</h3>
+                <p>
+                  Complexidade adicional na manutenção de conexões em
+                  dispositivos móveis
+                </p>
+              </div>
+              <div class="challenge-item">
+                <div class="challenge-icon">
+                  <span class="material-icons">equalizer</span>
+                </div>
+                <h3>Escalabilidade</h3>
+                <p>
+                  Desafios nos testes de carga com múltiplas conexões
+                  simultâneas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 18 - Conquistas -->
+        <div class="slide" data-slide="18">
+          <div class="slide-content">
+            <h2>Principais Conquistas Técnicas</h2>
+            <div class="achievements-grid">
+              <div class="achievement">
+                <div class="ach-icon">
+                  <span class="material-icons">architecture</span>
+                </div>
+                <h3>Arquitetura Escalável</h3>
+                <p>Sistema robusto capaz de suportar crescimento exponencial</p>
+              </div>
+              <div class="achievement">
+                <div class="ach-icon">
+                  <span class="material-icons">phone_in_talk</span>
+                </div>
+                <h3>Integração VoIP Inovadora</h3>
+                <p>Primeira solução no mercado com 10 chamadas simultâneas</p>
+              </div>
+              <div class="achievement">
+                <div class="ach-icon">
+                  <span class="material-icons">speed</span>
+                </div>
+                <h3>Performance Excecional</h3>
+                <p>Tempos de resposta inferiores a 200ms em 95% dos casos</p>
+              </div>
+              <div class="achievement">
+                <div class="ach-icon">
+                  <span class="material-icons">security</span>
+                </div>
+                <h3>Segurança Consolidada</h3>
+                <p>Implementação completa de boas práticas de segurança</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 19 - Trabalho Futuro -->
+        <div class="slide" data-slide="19">
+          <div class="slide-content">
+            <h2>Trabalho Futuro</h2>
+            <div class="future-work">
+              <div class="future-item">
+                <div class="future-phase">Fase 1</div>
+                <h3>Expansão Mobile</h3>
+                <p>Desenvolvimento de aplicações iOS e Android dedicadas</p>
+              </div>
+              <div class="future-item">
+                <div class="future-phase">Fase 2</div>
+                <h3>Inteligência Artificial</h3>
+                <p>Algoritmos de otimização de rotas e previsão de procura</p>
+              </div>
+              <div class="future-item">
+                <div class="future-phase">Fase 3</div>
+                <h3>Integração Pagamentos</h3>
+                <p>Sistema completo de faturação e pagamentos online</p>
+              </div>
+              <div class="future-item">
+                <div class="future-phase">Fase 4</div>
+                <h3>Mercado Europeu</h3>
+                <p>Expansão para outros países da União Europeia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 20 - Conclusões -->
+        <div class="slide" data-slide="20">
+          <div class="slide-content">
+            <h2>Conclusões</h2>
+            <div class="conclusions">
+              <div class="conclusion-item">
+                <div class="conclusion-icon">
+                  <span class="material-icons">check_circle</span>
+                </div>
+                <h3>Solução Robusta e Inovadora</h3>
+                <p>
+                  Sistema completo que resolve os principais problemas do setor
+                </p>
+              </div>
+              <div class="conclusion-item">
+                <div class="conclusion-icon">
+                  <span class="material-icons">trending_up</span>
+                </div>
+                <h3>Impacto Real no Setor</h3>
+                <p>
+                  Resultados mensuráveis em eficiência e satisfação do cliente
+                </p>
+              </div>
+              <div class="conclusion-item">
+                <div class="conclusion-icon">
+                  <span class="material-icons">rocket_launch</span>
+                </div>
+                <h3>Base para Expansão Futura</h3>
+                <p>
+                  Arquitetura preparada para crescimento e novas funcionalidades
+                </p>
+              </div>
+              <div class="conclusion-item">
+                <div class="conclusion-icon">
+                  <span class="material-icons">military_tech</span>
+                </div>
+                <h3>Referência no Mercado Francês</h3>
+                <p>Potencial para se tornar standard da indústria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 21 - Demonstração -->
+        <div class="slide" data-slide="21">
+          <div class="slide-content">
+            <h2>Demonstração da Aplicação</h2>
+            <div class="video-demo-container">
+              <div class="video-wrapper">
+                <video controls class="demo-video" poster="dispatcheur.png">
+                  <source src="demonstracao-dispatcheur.mp4" type="video/mp4" />
+                  <source
+                    src="demonstracao-dispatcheur.webm"
+                    type="video/webm"
+                  />
+                  <p>
+                    O seu navegador não suporta vídeos HTML5.
+                    <a href="demonstracao-dispatcheur.mp4"
+                      >Descarregue o vídeo</a
+                    >
+                    para visualizar.
+                  </p>
+                </video>
+              </div>
+              <div class="video-description">
+                <p>
+                  Demonstração completa do sistema DispatcheurCC em
+                  funcionamento
+                </p>
+                <ul class="demo-highlights">
+                  <li>Interface administrativa e de agente</li>
+                  <li>Sistema VoIP com múltiplas chamadas</li>
+                  <li>Extensão Chrome em tempo real</li>
+                  <li>Dashboard do cliente</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 22 - Perguntas -->
+        <div class="slide" data-slide="22">
+          <div class="slide-content final-slide">
+            <h2>Obrigado pela Atenção</h2>
+            <div class="final-content">
+              <h3>Perguntas e Discussão</h3>
+              <div class="contact-info">
+                <p><strong>Karim Hussen Patatas Hassam dos Santos</strong></p>
+                <p>A042542</p>
+                <p>Licenciatura em Informática</p>
+              </div>
+              <div class="questions-prompt">
+                <p>
+                  <span class="material-icons">question_answer</span> Estou
+                  disponível para responder às vossas questões
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
